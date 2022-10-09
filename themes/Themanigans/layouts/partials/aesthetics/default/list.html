@@ -1,0 +1,19 @@
+<div style="display: flex; flex-direction: column; align-items: center;">
+    <div style="position: relative; width: 80%;">
+        {{- partial "breadcrumb.html" . -}}
+        <p class="inter" style="font-size: 3em; margin: 0px 0px 1em 0px;">Collection : {{ .Section }}</p>
+        {{ $lastdate := "2000" }}
+        {{ range .Pages }}
+            {{ if ne $lastdate (.Date.Format "2006") }}
+                {{ $lastdate = (.Date.Format "2006") }}
+                <p class="inter" style="font-size: 2em; margin: 0em 0em 16px 0em;">{{ .Date.Format "2006" }}</p>
+            {{ end }}
+            <div class="inter" style="display: flex; flex-direction: row; margin-left: 16px;">
+                <span style="font-size: 1em; width: 60px; color: #717171;">{{.Date.Format "Jan 2"}}</span>
+                <a style="position: relative; display: block; margin-bottom: 0.5em;" class="a-no-style inter" href="{{.Permalink}}">
+                    <span style="border-bottom: 1px dashed; font-size: 1em;">{{.Title}}</span><br/>
+                </a><br/>
+            </div>
+        {{ end }}
+    </div>
+</div>

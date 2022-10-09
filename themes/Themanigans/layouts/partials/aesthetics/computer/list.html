@@ -1,0 +1,6 @@
+{{ range .Pages }}
+                <a href="{{.Permalink}}">
+                    <span>But it's geeky ! {{.Title}}</span>
+                    <span>{{.Date.Format "January 2, 2006"}}</span>
+                </a>
+{{ end }}

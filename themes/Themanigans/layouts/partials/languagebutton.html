@@ -1,0 +1,7 @@
+{{ if .IsTranslated }}
+<div class="inter" style="position: absolute; top: 1em; right: 1em">
+    {{ range .AllTranslations }}
+    <a class="a-no-style" href="{{ .Permalink }}">{{ .Lang }}</a>
+    {{ end }}
+</div>
+{{ end }}

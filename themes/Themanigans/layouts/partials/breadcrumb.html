@@ -1,0 +1,11 @@
+<!-- Code stolen from https://dev.to/faraixyz/breadcrumbs-in-hugo-303k -->
+
+{{ with .Parent }}
+    {{ partial "breadcrumb.html" . }}
+    {{ if .Parent }} > {{ end }}
+    {{ $Title := "Home"}}
+    {{ if ne .Title "Lulu's Shenanigans"}}
+        {{ $Title = .Title}}
+    {{ end }}
+    <a class="inter a-no-style" style="color: #B6B6B6; border-bottom: 2px dashed #B6B6B6;" href="{{ .Permalink }}">{{ $Title }}</a>
+{{ end }}

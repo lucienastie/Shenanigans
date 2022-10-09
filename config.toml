@@ -1,0 +1,23 @@
+baseURL = 'https://lucienastie.github.io/'
+languageCode = 'fr-fr'
+title = "Lulu's Shenanigans"
+theme = 'Themanigans'
+[params]
+    name = 'Lucien Astié'
+    job = 'Engineer student'
+    linkedin = 'https://www.linkedin.com/in/lucien-astie'
+    github = 'https://www.github.com/lucienastie'
+    mail = 'lucien.astie@gmail.com'
+[permalinks]
+    posts=":section/:title"
+defaultContentLanguage = 'en'
+[languages]
+  [languages.en]
+    weight=1
+  [languages.fr]
+    weight=2
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

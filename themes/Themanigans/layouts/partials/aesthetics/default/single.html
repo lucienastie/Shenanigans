@@ -1,0 +1,52 @@
+{{- partial "header.html" . -}}
+
+<div style="display: flex; flex-direction: column; align-items: center;">
+    <div id="post-container">
+        <div class="inter" style="display: flex; flex-direction: row; justify-content: space-between; flex-wrap: wrap;">
+            <div>
+                <span style="font-size: 1em; color: #B6B6B6;">{{- partial "breadcrumb.html" . -}}</span><br>
+                <span style="font-size: 3em;">{{ .Title }}</span><br />
+                <div style="color: #717171; font-size: 0.7em;">
+                    <span>{{ i18n "written" . }}</span><br>
+                    {{ if ne .Lastmod .Date }}
+                    <span>{{ i18n "edited" . }}</span>
+                    {{ end }}
+                </div>
+            </div>
+            <div class="trimoji-container">
+                <span id="tooltip-copy" class="tooltip-copy-hide"
+                    style="color: #FFF; background-color: #717171; padding: 10px; border-radius: 10px;">Trimoji
+                    copied !</span><br>
+                <span id="trimoji" onclick="toggleCopyTooltip()" style="font-size: 0.8em;"
+                    class="emoji-tag">{{ .Params.trimoji }}</span>
+            </div>
+        </div>
+        <div id="post-content" style="margin-top: 4em;">
+            {{ .Content }}
+        </div>
+    </div>
+</div>
+
+<script>
+    function toggleCopyTooltip() {
+        var clipboard = ""
+        var trimoji = document.getElementById("trimoji").childNodes
+        for (i = 0; i < trimoji.length; i++) {
+            clipboard = clipboard + trimoji[i].getAttribute("alt")
+        }
+        copyTextToClipboard(clipboard)
+        var tooltip = document.getElementById("tooltip-copy");
+        tooltip.style.opacity = 1;
+        setInterval(() => {
+            tooltip.style.opacity = 0;
+        }, 2000);
+    }
+
+    async function copyTextToClipboard(text) {
+        try {
+            await navigator.clipboard.writeText(text);
+        } catch (err) {
+            console.log('Error in copying text: ', err);
+        }
+    }
+</script>

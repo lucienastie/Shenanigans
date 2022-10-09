@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+{{- partial "head.html" . -}}
+
+<body>
+    {{- partial "header.html" . -}}
+    <div class="inter" style="display: flex; flex-direction: column; align-items: center; margin-bottom: 6em;" id="content-container">
+        <p style="font-size: 10em; margin: 0px;">404</p>
+        <p>
+            {{ i18n "nothinghere" . }}
+        </p>
+    </div>
+    {{- partial "footer.html" . -}}
+</body>
+
+</html>

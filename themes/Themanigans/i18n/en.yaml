@@ -1,0 +1,38 @@
+- id: wanttoknow
+  translation: "Want to know about me ? Click here !"
+
+- id: madeexplored
+  translation: "This website is made to be explored"
+
+- id: gotolulunomicon
+  translation: "Go to the Lulunomicon"
+  
+- id: getanintro
+  translation: "Get an introduction"
+
+- id: maywantto
+  translation: "You may want to"
+
+- id: latestcontent
+  translation: "Latest content ✨"
+
+- id: or
+  translation: "or"
+
+- id: intro
+  translation: "What you have in front of you is what I tried to build as a support for my creativity and my eager desire to comunicate with the vast and surprising world of internet. It might not be very user friendly or at least you might not quickly access every content like you are used to these days. And that's the whole point : losing oneself in my world for a bit. So take some time and get ready to explore my shenanigans."
+
+- id: meanderings
+  translation: "Explore the meanderings of my mind"
+
+- id: madewith
+  translation: "Made with ❤️, Hugo, Github pages and whole bunch of other things"
+
+- id: written
+  translation: 'Written on {{.Date.Format "January 2, 2006"}} by {{ .Params.author }}.'
+
+- id: edited
+  translation: 'Edited on {{.Lastmod.Format "January 2, 2006"}}.'  
+
+- id: nothinghere
+  translation: "Woah hold'up ! You went a bit too far in my world, there's nothing here !"
