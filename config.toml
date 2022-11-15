@@ -2,6 +2,7 @@ baseURL = 'https://lulushenanigans.me'
 languageCode = 'fr-fr'
 title = "Lulu's Shenanigans"
 theme = 'Themanigans'
+DefaultContentLanguage = 'fr'
 [params]
     name = 'Lucien Astié'
     job = 'Engineer student'
@@ -10,11 +11,11 @@ theme = 'Themanigans'
     mail = 'lucien.astie@gmail.com'
 [permalinks]
     posts=":section/:title"
-defaultContentLanguage = 'en'
+
 [languages]
-  [languages.en]
-    weight=1
   [languages.fr]
+    weight=1
+  [languages.en]
     weight=2
 
 [markup]

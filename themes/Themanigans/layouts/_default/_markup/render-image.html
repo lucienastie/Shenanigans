@@ -1,3 +1,4 @@
-<a href="{{ .Destination }}" target="_blank" class="md__image" style="border-bottom: none;">
+<a href="{{ .Destination }}" target="_blank" class="md__image" style="display: flex; flex-direction: column; align-items: center; border-bottom: none;">
     <img class="post-image" src="{{ .Destination | safeURL }}" alt="{{ .Text }}" {{ with .Title}} title="{{ . }}"{{ end }} />
+    <span class="inter gray-color" style="font-style: italic">{{ .Text }}</span>
 </a>

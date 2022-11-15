@@ -6,6 +6,6 @@ author: "Lulu"
 type: "not-referenced"
 trimoji: 🗺️🗺️🗺️
 aliases:
-    - /🗺️🗺️🗺️
+    - /en/🗺️🗺️🗺️
 ---
 

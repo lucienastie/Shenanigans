@@ -6,6 +6,6 @@ author: "Lulu"
 type: "post"
 trimoji: 👋ℹ️🌐
 aliases:
-    - /👋ℹ️🌐
+    - /en/👋ℹ️🌐
 ---
 

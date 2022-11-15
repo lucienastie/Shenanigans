@@ -35,7 +35,27 @@
                     {{ end }}
                 </div>
             </div>
-            <p id="index-intro" class="inter gray-color center-text">{{ i18n "intro" }}</p>
+            <div class="inter" id="index-intro" style="text-align: center;position: relative;">
+                <p style="font-size: 2em">Citation du jour 🔮</p>
+                <div class="quote-container" style="cursor: pointer;">
+                    <p id="quote-text" style="font-size: 2em; color: #919191; margin-bottom: 10px;">"Vous n'avez pas activé javascript sur cette page"</p>
+                </div>
+            </div>
+            <script src="/js/seedrandom.min.js"></script>
+            <script>
+                var quotes = []
+            </script>
+            {{ range $.Site.Data.citations.liste }}
+                <script>
+                    quotes.push({"text":{{ . }}})
+                </script>
+            {{ end }}
+            <script>
+                const today = new Date()
+                var quote_rng = new Math.seedrandom(today.getFullYear()+"-"+today.getMonth()+"-"+today.getDate())
+                var quote_otd = quotes[Math.floor((quotes.length-1)*quote_rng.quick())]
+                document.getElementById('quote-text').innerHTML = quote_otd["text"]
+            </script>
         </div>
         {{- partial "footer.html" . -}}
     </div>
