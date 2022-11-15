@@ -75,7 +75,7 @@ img.emoji {
 
 #index-surtitle {
     font-size: 4em;
-    margin-bottom: -0.7em;
+    margin-bottom: -0.4em;
 }
 
 #search-bar {
@@ -91,7 +91,6 @@ img.emoji {
     position: relative;
     width: 70%;
     margin-top: 32px;
-    font-size: 1.5em;
 }
 
 #index-random-button {
@@ -269,4 +268,14 @@ img.emoji {
 .a-no-style {
     text-decoration: none;
     color: inherit;
+}
+
+.quote-author {
+    opacity: 0;
+    transition: all .3s;
+}
+
+.quote-container:hover > .quote-author {
+    opacity: 1;
+    transition: all .3s;
 }
