@@ -1,7 +1,7 @@
 ---
 title: "Map"
 date: 2022-10-10
-draft: true
+draft: false
 author: "Lulu"
 type: "not-referenced"
 trimoji: 🗺️🗺️🗺️

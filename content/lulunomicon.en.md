@@ -3,7 +3,7 @@ title: "Lulunomicon"
 date: 2022-10-03
 lastmod: 2022-10-04
 author: "Lulu"
-draft: true
+draft: false
 type: "post"
 trimoji: "📖🗝️🔍"
 aliases:
