@@ -1,7 +1,7 @@
 ---
 title: "Log n°2 : Cure des femmes"
 date: 2022-11-17
-draft: true
+draft: false
 author: "Lulu"
 type: "post"
 trimoji: 📖🗝️🔍
