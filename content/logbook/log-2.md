@@ -4,9 +4,9 @@ date: 2022-11-17
 draft: false
 author: "Lulu"
 type: "post"
-trimoji: 📖🗝️🔍
+trimoji: ⛔👧⛔
 aliases:
-    - /📖🗝️🔍
+    - /⛔👧⛔
 ---
 
 Quelle pression, c'est le premier véritable article de ce blog _(déso le [log n°1](../log-1))_. Quel va être le sujet de cet article ? Bien évidemment un sujet qui m'a valu multiples embrouilles.
