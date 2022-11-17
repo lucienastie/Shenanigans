@@ -29,3 +29,7 @@ Attention cependant, le Lulunomicon semble être vivant par moments... Prend tou
 
 > #### Trimoji, _nom commun_ :
 > Shortcode composé de <span class="glitch">**ÿ̸̭͔́͗k̶̳͍̪̘̈́́̄̀̏ẃ̴̡͍͔̘̮̤H̵͕̖̪̏̓͒f̵̨̬̏͘F̶̛̺̜͉̺̮͗́́́P̷͚͈̍̐͋̀̕͜**</span> utilisé pour trouver les articles dans Lulu's Shenanigans
+
+
+> #### Loupe antillusions™, _nom commun_ :
+> Objet fictif créé pour déceller les surcouches créées par la société. Enfin il n'a été utilisé que dans ce but pour l'instant... Peut être a-t-il d'autres utilités ?
