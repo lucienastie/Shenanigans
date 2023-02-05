@@ -36,6 +36,17 @@
     opacity: 0;
 }
 
+.info {
+    border-color: rgb(190, 255, 190);
+    background-color: rgb(230, 255, 230);
+    border-style: dashed;
+    border-radius: 15px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 a {
     color: #494949;
     text-decoration: none;
