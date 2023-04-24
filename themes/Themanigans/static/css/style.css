@@ -70,7 +70,7 @@ img.emoji {
 
 #index-title {
     font-size: 6em;
-    margin-bottom: -0.2em;
+    margin-bottom: -0em;
 }
 
 #index-surtitle {
@@ -80,7 +80,7 @@ img.emoji {
 
 #search-bar {
     font-size: 2em;
-    margin-top: 6em;
+    margin-top: 3em;
 }
 
 .hide-on-mobile {
@@ -278,4 +278,17 @@ img.emoji {
 .quote-container:hover > .quote-author {
     opacity: 1;
     transition: all .3s;
+}
+
+#location {
+    margin-top: 2em;
+    text-align: center;
+    font-size: 2em;
+    color: #000
+}
+
+.peertube-iframe {
+    position: relative;
+    width: 100%;
+    min-height: 400px;
 }

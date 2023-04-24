@@ -182,3 +182,17 @@
         transform: translate(13px, -1px) skew(-13deg);
     }
 }
+
+.gelatine {
+    position: relative;
+    animation: gelatine 10s linear infinite;
+    display: inline-block;
+}
+
+@keyframes gelatine {
+    from, to { transform: scale(1, 1); }
+    2% { transform: scale(0.9, 1.1); }
+    4% { transform: scale(1.1, 0.9); }
+    6% { transform: scale(0.95, 1.05); }
+    8% { transform: scale(1, 1); }
+  }

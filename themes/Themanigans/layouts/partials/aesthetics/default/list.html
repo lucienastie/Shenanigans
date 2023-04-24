@@ -6,7 +6,7 @@
         {{ range .Pages }}
             {{ if ne $lastdate (.Date.Format "2006") }}
                 {{ $lastdate = (.Date.Format "2006") }}
-                <p class="inter" style="font-size: 2em; margin: 0em 0em 16px 0em;">{{ .Date.Format "2006" }}</p>
+                <p class="inter" style="font-size: 2em; margin: 16px 0em 16px 0em;">{{ .Date.Format "2006" }}</p>
             {{ end }}
             <div class="inter" style="display: flex; flex-direction: row; margin-left: 16px;">
                 <span style="font-size: 1em; width: 60px; color: #717171;">{{.Date.Format "Jan 2"}}</span>
