@@ -196,3 +196,8 @@
     6% { transform: scale(0.95, 1.05); }
     8% { transform: scale(1, 1); }
   }
+
+@keyframes slider {
+	0%   { transform: translateX(0%); }
+	100% { transform: translateX(-100%); }
+}
