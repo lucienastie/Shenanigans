@@ -29,7 +29,7 @@
   translation: "Made with ❤️, Hugo, Github pages and whole bunch of other things"
 
 - id: written
-  translation: 'Written on {{.Date.Format "January 2, 2006"}} by {{ .Params.author }}.'
+  translation: 'Published on {{.Date.Format "January 2, 2006"}}.'
 
 - id: edited
   translation: 'Edited on {{.Lastmod.Format "January 2, 2006"}}.'  

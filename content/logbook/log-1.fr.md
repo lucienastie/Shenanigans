@@ -4,12 +4,10 @@ date: 2022-11-15
 draft: false
 author: "Lulu"
 type: "post"
-trimoji: 0️⃣0️⃣1️⃣
-aliases:
-    - /0️⃣0️⃣1️⃣
+typecontent: "text"
 ---
 
-### Le retour
+# Le retour
 
 Il est grand temps que je relance mon blog ! Ça me manque cruellement d'écrire et j'ai pleeeeeins de choses à raconter.
 
@@ -31,7 +29,7 @@ Je viens aujourd'hui même d'avoir une réponse positive ! Donc c'est parti pour
 
 Pour tout ceux et celles qui se demandent pourquoi Berlin ? Je vous met au défi d'aller passer un weekend pendant la Pride 🌈 la bas et de ne pas vouloir revenir y passer au moins un semestre.
 
-### Qu'est ce que vous pourrez trouver ici ?
+# Qu'est ce que vous pourrez trouver ici ?
 
 Quel genre de contenu on va pouvoir trouver sur ce blog ? Vous pourrez trouver toutes les informations nécéssaires sur [la page d'introduction](/introduction). Mais pour les flemmard·es du clic, ça risque d'être assez varié, je cherche pas particulièrement à avoir des séries ou un contenu périodique comme j'ai pu le faire avec mon blog de voyage pendant l'été 2022. En fait je me mets pas de barrières, je pense que j'écris ce blog autant pour vous que pour moi. Mine de rien, c'est vachement cathartique d'écrire quand on en a gros sur la patate.
 \

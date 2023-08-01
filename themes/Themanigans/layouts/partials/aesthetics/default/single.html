@@ -1,52 +1,60 @@
-{{- partial "header.html" . -}}
-
-<div style="display: flex; flex-direction: column; align-items: center;">
-    <div id="post-container">
-        <div class="inter" style="display: flex; flex-direction: row; justify-content: space-between; flex-wrap: wrap;">
-            <div>
-                <span style="font-size: 1em; color: #B6B6B6;">{{- partial "breadcrumb.html" . -}}</span><br>
-                <span style="font-size: 3em;">{{ .Title }}</span><br />
-                <div style="color: #717171; font-size: 0.7em;">
-                    <span>{{ i18n "written" . }}</span><br>
-                    {{ if ne .Lastmod .Date }}
-                    <span>{{ i18n "edited" . }}</span>
-                    {{ end }}
-                </div>
-            </div>
-            <div class="trimoji-container">
-                <span id="tooltip-copy" class="tooltip-copy-hide"
-                    style="color: #FFF; background-color: #717171; padding: 10px; border-radius: 10px;">Trimoji
-                    copied !</span><br>
-                <span id="trimoji" onclick="toggleCopyTooltip()" style="font-size: 0.8em;"
-                    class="emoji-tag">{{ .Params.trimoji }}</span>
-            </div>
-        </div>
-        <div id="post-content" style="margin-top: 4em;">
-            {{ .Content }}
-        </div>
+<div class="c-row gap" style="margin-top: 50px;">
+  <div class="side-content c-row flex-end gap">
+    <div class="content-container" style="height: fit-content; padding: 10px; margin-top: 15px; position: sticky; top: 35px;">
+      <a href="{{ .Parent.Permalink }}">
+        <img src="/svg/ArrowBack.svg" />
+      </a>
     </div>
+    <div class="content-container" style="height: fit-content; position: sticky; top: 20px;">
+      {{ .TableOfContents }}
+    </div>
+  </div>
+  <div class="post-container content-container fs-default">
+      <div>
+          <h1>{{- partial "postname.html" . -}}</h1>
+          <div class="fc-grey fs-small">
+              {{ if ne .Lastmod .Date }}
+                <span>{{ i18n "edited" . }}</span>
+              {{ else }}
+                <span>{{ i18n "written" . }}</span>
+              {{ end }}
+              <span> - Section <a href="{{ .Parent.Permalink }}">{{ .Parent.Title }}</a></span>
+          </div>
+      </div>
+      <div>
+          {{ .Content }}
+          <div class="c-row fc-grey fs-small flex-end" style="margin-top: 30px;">
+            <span class="c-row align-center" style="gap: 5px"><em>Si vous voulez m'envoyer un message </em>
+              <a style="height: fit-content" target="_blank" href="{{ .Site.Params.contactTelegram }}"><img style="padding: 0px;" src="/svg/TelegramApp.svg" /></a>
+              <a style="height: fit-content" target="_blank" href="{{ .Site.Params.contactMessenger }}"><img style="padding: 0px;" src="/svg/FacebookApp.svg" /></a>
+              <a style="height: fit-content" target="_blank" href="{{ .Site.Params.contactMail }}"><img style="padding: 0px;" src="/svg/MailApp.svg" /></a>
+              <a style="height: fit-content" target="_blank" href="{{ .Site.Params.contactMastodon }}"><img style="padding: 0px;" src="/svg/MastodonApp.svg" /></a>
+            </span>
+          </div>
+      </div>
+  </div>
+  <div class="side-content"></div>
 </div>
 
 <script>
-    function toggleCopyTooltip() {
-        var clipboard = ""
-        var trimoji = document.getElementById("trimoji").childNodes
-        for (i = 0; i < trimoji.length; i++) {
-            clipboard = clipboard + trimoji[i].getAttribute("alt")
-        }
-        copyTextToClipboard(clipboard)
-        var tooltip = document.getElementById("tooltip-copy");
-        tooltip.style.opacity = 1;
-        setInterval(() => {
-            tooltip.style.opacity = 0;
-        }, 2000);
-    }
+window.addEventListener('DOMContentLoaded', () => {
 
-    async function copyTextToClipboard(text) {
-        try {
-            await navigator.clipboard.writeText(text);
-        } catch (err) {
-            console.log('Error in copying text: ', err);
-        }
-    }
+	const observer = new IntersectionObserver(entries => {
+		entries.forEach(entry => {
+			const id = entry.target.getAttribute('id');
+			if (entry.intersectionRatio > 0) {
+        console.log(id)
+				document.querySelector(`nav ul li a[href="#${id}"]`).parentElement.classList.add('active');
+			} else {
+				document.querySelector(`nav li a[href="#${id}"]`).parentElement.classList.remove('active');
+			}
+		});
+	});
+
+	// Track all sections that have an `id` applied
+	document.querySelectorAll('h1[id]').forEach((title) => {
+		observer.observe(title);
+	});
+	
+});
 </script>

@@ -1,19 +1,25 @@
-<div style="display: flex; flex-direction: column; align-items: center;">
-    <div style="position: relative; width: 80%;">
-        {{- partial "breadcrumb.html" . -}}
-        <p class="inter" style="font-size: 3em; margin: 0px 0px 1em 0px;">Collection : {{ .Section }}</p>
+<div class="c-row justify-center">
+<div class="post-container content-container fs-default">
+    <div>
+      <h1>{{ .Title }}</h1>
+        <div class="fc-grey fs-small">
+          <span class="fc-grey fs-small">Ou comment Lucien procrastine</span>
+        </div>
+    </div>
+    <div>
         {{ $lastdate := "2000" }}
         {{ range .Pages }}
             {{ if ne $lastdate (.Date.Format "2006") }}
                 {{ $lastdate = (.Date.Format "2006") }}
-                <p class="inter" style="font-size: 2em; margin: 16px 0em 16px 0em;">{{ .Date.Format "2006" }}</p>
+                <h2>{{ .Date.Format "2006" }}</h2>
             {{ end }}
-            <div class="inter" style="display: flex; flex-direction: row; margin-left: 16px;">
-                <span style="font-size: 1em; width: 60px; color: #717171;">{{.Date.Format "Jan 2"}}</span>
-                <a style="position: relative; display: block; margin-bottom: 0.5em;" class="a-no-style inter" href="{{.Permalink}}">
-                    <span style="border-bottom: 1px dashed; font-size: 1em;">{{.Title}}</span><br/>
+            <div style="margin-left: 20px;" class="c-row">
+                <span class="fc-grey date-item">{{.Date.Format "Jan 2"}}</span>
+                <a href="{{.Permalink}}">
+                    <span>{{- partial "postname.html" . -}}</span>
                 </a><br/>
             </div>
         {{ end }}
     </div>
+</div>
 </div>

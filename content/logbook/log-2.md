@@ -4,9 +4,7 @@ date: 2022-11-17
 draft: false
 author: "Lulu"
 type: "post"
-trimoji: ⛔👧⛔
-aliases:
-    - /⛔👧⛔
+typecontent: "text"
 ---
 
 Quelle pression, c'est le premier véritable article de ce blog _(déso le [log n°1](../log-1))_. Quel va être le sujet de cet article ? Bien évidemment un sujet qui m'a valu multiples embrouilles.
@@ -19,7 +17,7 @@ Cela va sans dire que tout ce que j'écris dans mon blog n'est qu'un point de vu
 
 Commençons par le commencement. Qu'est-ce qui a bien pu me faire remettre en question mes habitudes relationnelles et mes interactions avec les femmes ?
 
-### Comment on en arrive à une cure ?
+# Comment on en arrive à une cure ?
 
 Je suis pas sûr que cette partie soit très utile, mais que serait ce blog sans vous raconter les paaaaassionants détails de ma vie.
 
@@ -55,7 +53,7 @@ Attention on passe ça à la loupe antillusions™ :
 
 Malheureusement je caricature à peine...
 
-### Maintenant
+# Maintenant
 
 Depuis à peu près 5 mois je suis célibataire volontaire et même plus je me refuse des interactions motivées par des désirs physiques avec les femmes. Mais, pourquoi tant de haine ? C'est la conclusion logique que j'ai trouvée, puisque :
 

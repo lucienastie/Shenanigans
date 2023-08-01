@@ -11,7 +11,7 @@ aliases:
 
 ![Ma trombine](/img/articles/lulu/moa.jpg)
 
-### Qui suis-je ?
+# Qui suis-je ?
 Lucien ou ✨Lulu✨, 22 ans, ~~Chauve~~ rasé, plein d'énergie et tellemend bavard que j'ai décidé d'aller raconter ma vie à l'internet lui même.\
 \
 Non plus sérieusement je suis actuellement étudiant ingénieur à l'[ENSAM](https://artsetmetiers.fr/fr) aka **Arts et Métiers**, ce qui fait de moi un [Gadz'Arts](https://desencyclopedie.org/wiki/Gadzarts) (_une espèce d'équivalent des frat boy états-uniens, plus poilus et moins propres_). Mais ne vous laissez pas berner par cette description peu attirante, j'existe en dehors de mon école. Et fort heureusement, si vous êtes curieux ou curieuses vous pouvez en apprendre plus sur moi en arpentant les "shenanigans" que j'ai laissé [ici](../).

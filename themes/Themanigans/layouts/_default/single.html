@@ -3,10 +3,12 @@
 {{- partial "head.html" . -}}
 <link rel="stylesheet" type="text/css" href="/css/post.css">
 <body>
-    <div id="content-container">
+    <div class="site-container c-column space-between">
+      <div>
+        {{- partial "header.html" . -}}
         {{- partial "aesthetics/default/single.html" . -}}
-
-        {{- partial "footer.html" . -}}
+      </div>
+      {{- partial "footer.html" . -}}
     </div>
 </body>
 

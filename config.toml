@@ -3,22 +3,29 @@ languageCode = 'fr-fr'
 title = "Lulu's Shenanigans"
 theme = 'Themanigans'
 DefaultContentLanguage = 'fr'
+
 [params]
     name = 'Lucien Astié'
     job = 'Engineer student'
     linkedin = 'https://www.linkedin.com/in/lucien-astie'
     github = 'https://www.github.com/lucienastie'
     mail = 'lucien.astie@gmail.com'
+    contactTelegram = 'https://t.me/globuzma'
+    contactMessenger = 'https://m.me/100006136681633/'
+    contactMail = 'mailto:lucien.astie@gmail.com'
+    contactMastodon = 'https://piaille.fr/@globuzma'
 [permalinks]
     posts=":section/:title"
 
 [languages]
   [languages.fr]
     weight=1
-  [languages.en]
-    weight=2
 
 [markup]
+  [markup.tableOfContents]
+    endLevel = 2
+    ordered = false
+    startLevel = 1
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true

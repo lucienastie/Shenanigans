@@ -4,14 +4,11 @@ date: 2023-02-05
 draft: false
 author: "Lulu"
 type: "post"
-trimoji: 🇩🇪🧳🧘
-aliases:
-    - /🇩🇪🧳🧘
+typecontent: "text"
 ---
-<div class="info">
 Nouveauté !!!! Cet article est disponible en version audio, si vous avez envie de vous laisser porter par ma voix plutôt que de lire. Il vous suffit d'écouter l'audio juste la :
 
-<audio class="audio" src="/img/articles/logbook/log-3/audioblog.mp3" controls></audio></div>
+<audio class="audio" src="/img/articles/logbook/log-3/audioblog.mp3" controls></audio>
 
 J'ai eu teeeeeellement de fois la question :
 
@@ -47,10 +44,7 @@ Merci à tous·te·s
 <br>
 
 # Un changement de média, ou presque...
-Plus sérieusement, ça fait un p'tit bout de temps que j'essaye de sortir quelque chose ici mais ça a jamais trop trop marché. Pour être même tout à fait honnête j'ai reçu un bon micro à Noël et je m'étais mis en tête de faire des vlogs. Et heu ... J'étais pas vraiment vraiment satisfait du résultat, du coup hop à la trappe. J'y pense encore mais je sens que je suis pas encore suffisamment à l'aise devant une caméra. Mais bon je vais quand même pas vous laisser sur ça et changer de sujet, un p'tit extrait :
-<br>
-
-<iframe title="Extrait vlog" src="https://www.orion-hub.fr/videos/embed/8648e918-37bb-4f0b-9134-7632017adbbc" allowfullscreen="" sandbox="allow-same-origin allow-scripts allow-popups" frameborder="0"></iframe>
+Plus sérieusement, ça fait un p'tit bout de temps que j'essaye de sortir quelque chose ici mais ça a jamais trop trop marché. Pour être même tout à fait honnête j'ai reçu un bon micro à Noël et je m'étais mis en tête de faire des vlogs. Et heu ... J'étais pas vraiment vraiment satisfait du résultat, du coup hop à la trappe. J'y pense encore mais je sens que je suis pas encore suffisamment à l'aise devant une caméra.
 
 Et j'ai alors fait ce que je fais à peu près 90% du temps. J'ai demandé conseil à ma soeur, et c'est de la qu'est né cette idée de faire une sorte d'audiobook de mon blog. Tadaaah. Mais je suis pas ici pour vous raconter à quel point je suis un artiste torturé. J'ai enfin déménagé à Berlin, j'ai pleins d'autres choses à vous raconter !!!
 

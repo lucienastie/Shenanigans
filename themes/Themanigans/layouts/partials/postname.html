@@ -1,0 +1,9 @@
+{{ if eq .Params.Typecontent "text" }}
+📃 {{ .Params.Title }}
+{{ else if eq .Params.Typecontent "video" }}
+🎥 {{ .Params.Title }}
+{{ else if eq .Params.Typecontent "audio" }}
+🎧 {{ .Params.Title }}
+{{ else }}
+{{ .Params.Title }}
+{{ end }}
