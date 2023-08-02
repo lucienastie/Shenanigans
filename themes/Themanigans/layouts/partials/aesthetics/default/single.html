@@ -43,7 +43,6 @@ window.addEventListener('DOMContentLoaded', () => {
 		entries.forEach(entry => {
 			const id = entry.target.getAttribute('id');
 			if (entry.intersectionRatio > 0) {
-        console.log(id)
 				document.querySelector(`nav ul li a[href="#${id}"]`).parentElement.classList.add('active');
 			} else {
 				document.querySelector(`nav li a[href="#${id}"]`).parentElement.classList.remove('active');
@@ -55,6 +54,8 @@ window.addEventListener('DOMContentLoaded', () => {
 	document.querySelectorAll('h1[id]').forEach((title) => {
 		observer.observe(title);
 	});
-	
+	document.querySelectorAll('h2[id]').forEach((title) => {
+		observer.observe(title);
+	});
 });
 </script>
