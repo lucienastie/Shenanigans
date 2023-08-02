@@ -178,7 +178,7 @@ body {
   min-width: 60px;
 }
 
-#TableOfContents > ul > li > a {
+#TableOfContents ul > li > a {
   width: 150px;
   color: #B3B3B3;
   font-weight: bold;
@@ -189,15 +189,15 @@ body {
   transition: all .3s;
 }
 
-#TableOfContents > ul > li.active > a {
+#TableOfContents ul > li.active > a {
   color: black;
 }
 
-#TableOfContents > ul > li {
+#TableOfContents ul > li {
   margin-bottom: 10px;
 }
 
-#TableOfContents > ul {
+#TableOfContents ul {
   padding: 0px 0px 0px 20px;
 }
 
